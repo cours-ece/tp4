@@ -1,8 +1,8 @@
 # Answers
 
-Nom : 
-Prénom : 
-NB : 
+Nom : TRBOVIC
+Prénom : Alexandre
+NB : 7
 
 # 1.
 A quoi sert l'A/B testing ?
