@@ -1,8 +1,8 @@
 # Answers
 
-Nom : 
-Prénom : 
-NB : 
+Nom : Magadis
+Prénom : Aïda
+NB : 7
 
 # 1.
 A quoi sert l'A/B testing ?
