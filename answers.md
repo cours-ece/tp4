@@ -1,8 +1,8 @@
 # Answers
 
-Nom : 
-Prénom : 
-NB : 
+Nom : Kourganoff
+Prénom : Adrien 
+NB : 7
 
 # 1.
 A quoi sert l'A/B testing ?
