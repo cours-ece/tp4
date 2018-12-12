@@ -1,8 +1,8 @@
 # Answers
 
-Nom : 
-Prénom : 
-NB : 
+Nom : Tagliero
+Prénom : Hugo
+NB : 4
 
 # 1.
 A quoi sert l'A/B testing ?
