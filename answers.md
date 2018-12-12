@@ -1,8 +1,8 @@
 # Answers
 
-Nom : 
-Prénom : 
-NB : 
+Nom : Pasternak
+Prénom : Claire
+NB : 3
 
 # 1.
 A quoi sert l'A/B testing ?
