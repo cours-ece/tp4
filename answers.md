@@ -1,8 +1,8 @@
 # Answers
 
-Nom : 
-Prénom : 
-NB : 
+Nom : TABEL
+Prénom : Eugénie
+NB : 6
 
 # 1.
 A quoi sert l'A/B testing ?
