@@ -1,9 +1,8 @@
 # Answers
 
-Nom : 
-Prénom : 
-NB : 
-
+Nom : Asmar	
+Prénom : Estelle
+NB : 6
 # 1.
 A quoi sert l'A/B testing ?
 
