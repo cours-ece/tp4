@@ -25,7 +25,7 @@ Comment simuler un problème de timeout avec Istio ?
 On réalise une fault injection.
 
 Comment le résoudre ?
-On change les timleout dans les config.
+On change les timeout dans les config.
 
 # 3.
 Qu'est-ce que le canary release ?
@@ -65,8 +65,12 @@ le serveur.
 
 # 7.
 Pourquoi bloquer le traffic vers un service ?
+En cas de problème sur un service, les services qui en dependent vont aussi avoir un problème.
+On peut donc limiter l'accumulation de retards.
 
 Comment l'implémenter simplement avec Istio ?
+istioctl create -f ratelimit-handler.yaml pour configurer le nombre max de requetes
+istioctl create -f ratelimit-rule.yaml pour configurer le quota de mémoire
 
 # 8.
 Quel est la problématique de tracing distribué ?
@@ -87,5 +91,7 @@ Graphana
 
 # 12.
 A quoi sert un servicegraph ?
+Il sert à faire apparaitre un schéma représentant tous les services et les appels entre ces derniers
 
 Quel serait l'utilité dans le quotidien d'un ops ?
+Permet de voir simplement les services d'une application
