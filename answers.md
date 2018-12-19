@@ -58,10 +58,15 @@ Pourquoi avoir besoin de mirrorer le traffic vers un autre composant ?
 Ca permet de modifier la production en limitant les risques. On effectue une copie du trafic qui est située sur un "request path" moins critique pour le serveur.
 
 # 7.
-Pourquoi bloquer le traffic vers un service ?
+Pourquoi bloquer le trafic vers un service ?
 Si un service met trop de temps à répondre, les services qui en dépendent vont être également ralentis, on évite ainsi d'accumuler les retards.
 
 Comment l'implémenter simplement avec Istio ?
+On utilise le rate limit qui permet de limiter dynamiquement le trafic vers un service.
+istioctl create -f ratelimit-handler.yaml
+le handler va permettre de configurer le nombre maximum de requêtes par seconde
+istioctl create -f ratelimit-rule.yaml
+Le rule permet de fixer le quota memoire (memquota) qui va activer le rate limit.
 
 # 8.
 Quel est la problématique de tracing distribué ?
