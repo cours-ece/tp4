@@ -17,7 +17,7 @@ labels: version: v3 weight: 50
 Comment simuler un problème de timeout avec Istio ?
 Nous utilisons un outil qui permet de faire du fault injection. 
 Comment le résoudre ?
-Il faut changer les timleout dans la configuration d'une ou plusieurs des applications. Ou alors faire en sorte que l'applicaiton en question tourne plus rapidement (optimisation de code etc.)
+Il faut changer les timeout dans la configuration d'une ou plusieurs des applications. Ou alors faire en sorte que l'applicaiton en question tourne plus rapidement (optimisation de code etc.)
 
 # 3.
 Qu'est-ce que le canary release ?
@@ -47,6 +47,7 @@ Cela permet des modifications sur la production en prenant le moins de risques p
 Pourquoi bloquer le traffic vers un service ?
  Si un service met trop de temps à répondre, les services qui en dépendent vont être également ralentis, on évite ainsi d'accumuler les retards.
 Comment l'implémenter simplement avec Istio ?
+On utilise le rate limit qui permet de limiter dynamiquement le trafic vers un service. istioctl create -f ratelimit-handler.yaml le handler va permettre de configurer le nombre maximum de requêtes par seconde istioctl create -f ratelimit-rule.yaml Le rule permet de fixer le quota memoire (memquota) qui va activer le rate limit.
 
 # 8.
 Quel est la problématique de tracing distribué ?
@@ -56,15 +57,16 @@ Istio trace tous les appels à toutes les applications du cluster et les montre 
 
 # 9.
 Comment s'appelle l'outil de récupération des métrics ?
-Promotheus
+Prometheus
 
 # 10.
 
 # 11.
 Comment s'appelle l'outil de visualisation des métrics ?
-Graphana
+Grafana
 
 # 12.
 A quoi sert un servicegraph ?
-
+Un servicegraph est une représentation schématique de l'ensemble des services ainsi que les appels qui se font entre eux.
 Quel serait l'utilité dans le quotidien d'un ops ?
+Le servicegraph permet de visualiser très simplement l'ensemble des services d'une application.
