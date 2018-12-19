@@ -83,9 +83,10 @@ Prometheus
 
 # 11.
 Comment s'appelle l'outil de visualisation des métrics ?
-Graphana
+Grafana
 
 # 12.
 A quoi sert un servicegraph ?
-
+Un servicegraph est une représentation schématique de l'ensemble des services ainsi que les appels qui se font entre eux.
 Quel serait l'utilité dans le quotidien d'un ops ?
+Le servicegraph permet de visualiser très simplement l'ensemble des services d'une application.
