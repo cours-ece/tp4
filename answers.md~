@@ -63,7 +63,7 @@ Prometheus
 
 # 11.
 Comment s'appelle l'outil de visualisation des métrics ?
-Grafana
+Prometheus
 # 12.
 A quoi sert un servicegraph ?
 Surveiller le traffic de données entre les services.
