@@ -6,7 +6,7 @@ NB : 2
 
 # 1.
 A quoi sert l'A/B testing ?
-A quoi sert l'A/B testing ? Il permet de pouvoir tester l'impacte d'une montée de version sur une population d'utilisateur donnée. Un utilisateur aura par exemple la nouvelle version et un autre l'ancienne.
+Il permet de pouvoir tester l'impacte d'une montée de version sur une population d'utilisateur donnée. Un utilisateur aura par exemple la nouvelle version et un autre l'ancienne.
 Comment appliquer de l'A/B testing grâce à Istio ?
 Avec Istio on peut créer deux routes différentes pour deux versions. On donne alors à chaque route un poind allant de 0 à 100. Le total des deux poids doit correspondre à 100. (Ce sont des pourcents) route:
 
