@@ -22,8 +22,10 @@ route:
 
 # 2.
 Comment simuler un problème de timeout avec Istio ?
+On réalise une fault injection.
 
 Comment le résoudre ?
+On change les timleout dans les config.
 
 # 3.
 Qu'est-ce que le canary release ?
@@ -49,8 +51,11 @@ On utilise le meme sytème que l'A/B Testing
 
 # 5.
 Qu'est-ce qu'un Circuit Breaker ?
+C'est un outil permettant de rediriger les flux si un service et trop lent ou tombe.
+Cela permet de réduire l'impact du problème.
 
 Comment l'implémenter dans un contexte Kubernetes ?
+Avec un ensemble de règles dans la config.
 
 # 6.
 Pourquoi avoir besoin de mirrorer le traffic vers un autre composant ?
@@ -65,8 +70,10 @@ Comment l'implémenter simplement avec Istio ?
 
 # 8.
 Quel est la problématique de tracing distribué ?
+La résolution de problèmes grace à la comprehension du fonctionnement d'une appli.
 
 Quel est la spécification du tracing distribué et son implémentation dans Istio ?
+On peut tracer tous les appels à toutes les appli pour les afficher sur un dashboard.
 
 # 9.
 Comment s'appelle l'outil de récupération des métrics ?
