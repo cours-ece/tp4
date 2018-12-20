@@ -49,7 +49,7 @@ Quel est la problématique de tracing distribué ? C'est la compréhension du co
 Quel est la spécification du tracing distribué et son implémentation dans Istio ? Istio va tracer les appels de chacune des applications du cluster et les afficher sur un dashboard.
 
 # 9.
-Comment s'appelle l'outil de récupération des métrics ? Prometheus
+Comment s'appelle l'outil de récupération des métrics ? Promotheus
 
 # 10.
 
