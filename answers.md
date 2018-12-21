@@ -11,6 +11,7 @@ L’A/B testing est une procédure permettant de mesurer l’impact d’un chang
 
 
 Comment appliquer de l'A/B testing grâce à Istio ?
+Istio permet de faire du traffic routing. 
 On utilise un routeur constitué deux routes, chacune menant vers une version différente (A ou B).
 
 # 2.
@@ -22,19 +23,21 @@ En configurant les timeouts afin d'augmenter les délais ou bien en augmentant l
 
 # 3.
 Qu'est-ce que le canary release ?
-C'est une technique qui sert à réduire les risques lors de la mise à jour d'une application.
- On reroute uniquement une petite partie des utilisateurs sur la nouvelle version pour tester et voir si le changement de version gère des erreurs.
+Le canary Release est un pattern qui permet de mettre une petite tranche de population sur la version N + 1. 
+La tranche restante restera temporairement sur la version N. 
 
 En quoi est-ce utile ?
 Cette technique permet de vérifier que la nouvelle version fonctionne bien et de limiter l'impact sur la population des utilisateurs
 
 Comment l'implémenter dans Istio ?
+Comme pour l'A/B testing. La v1 va avoir un poids de 90 et la v2 de 10 par exemple.
+
 
 # 4.
 
 # 5.
 Qu'est-ce qu'un Circuit Breaker ?
-Un outil de sécurité qui permet de rediriger les utilisateurs vers une autre application lorsque l'application initiale ne fonctionne pas bien.
+Un outil de sécurité qui permet de protéger les applications contre les erreurs, les temps de latence et d'autres effets indésirables, en redirigeant les utilisateurs vers une autre application.
 
 Comment l'implémenter dans un contexte Kubernetes ?
 En créant une destination dans la configuration de Kubernetes.
@@ -47,14 +50,14 @@ Ainsi le risque lors du déploiement en production d'une l'application est rédu
 
 # 7.
 Pourquoi bloquer le traffic vers un service ?
-Pour limiter l'impact d'un service défectueux sur d'autres services qui dépendent de lui.
+Pour limiter l'impact d'un service défectueux sur d'autres services qui dépendent de lui (ralentissement)
 
 Comment l'implémenter simplement avec Istio ?
 Grâce aux rate limits.
 
 # 8.
 Quel est la problématique de tracing distribué ?
-Etudier et comprendre le comportement d'une application.
+Etudier et comprendre le comportement d'une application et résoudre ses problèmes.
 
 Quel est la spécification du tracing distribué et son implémentation dans Istio ?
 Jeager permet de visualiser toutes les reqûetes sur un dashboard.
@@ -74,3 +77,5 @@ A quoi sert un servicegraph ?
 C'est une visualisation de l'ensemble des services et de la communication entre eux.
 
 Quel serait l'utilité dans le quotidien d'un ops ?
+Garantir la stabilité de notre système.
+
