@@ -1,8 +1,8 @@
-# Answers
+﻿# Answers
 
-Nom : 
-Prénom : 
-NB : 
+Nom : DEMOGE	
+Prénom : GREGOIRE
+NB : 4
 
 # 1.
 A quoi sert l'A/B testing ?
