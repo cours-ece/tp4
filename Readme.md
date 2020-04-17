@@ -1,9 +1,7 @@
 # TP 4 : Introduction au Service Mesh
 
 
-TEST 4 ZEIT.CO ZRETYURERFETY67FJHKEBFKHJBRKEBRFZ4BE
-
-huiuhiuh
+17/04 10:10
 
 
 Ce TP est une première introduction aux problématiques rencontrées lors de la création et de la manipulation de micro-services dans un contexte Kubernetes.
