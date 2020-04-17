@@ -3,8 +3,7 @@
 
 TEST 4 ZEIT.CO ZRETYURERFETY67FJHKEBFKHJBRKEBRFZ4BE
 
-DEUXIEME MODIF MAJ
-TROISIEME ohui
+huiuhiuh
 
 
 Ce TP est une première introduction aux problématiques rencontrées lors de la création et de la manipulation de micro-services dans un contexte Kubernetes.
