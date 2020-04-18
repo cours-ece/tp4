@@ -4,6 +4,8 @@ Nom : DEMOGE
 Prénom : GREGOIRE
 NB : 4
 
+Test 18/04 11:41
+
 # 1.
 A quoi sert l'A/B testing ?
 
